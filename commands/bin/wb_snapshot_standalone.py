@@ -70,7 +70,7 @@ def main() -> int:
         print("❌ Ошибка: не задана переменная окружения WB_API_TOKEN", file=os.sys.stderr)
         return 1
 
-    project_root = Path(__file__).resolve().parents[3]
+    project_root = Path(__file__).resolve().parents[2]
     output_dir = Path(os.environ.get("OUTPUT_DIR", project_root / "Данные" / "Индекс Локализации" / "История остатков WB" / "snapshots"))
     output_dir.mkdir(parents=True, exist_ok=True)
 
